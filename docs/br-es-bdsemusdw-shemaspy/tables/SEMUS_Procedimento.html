@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>bdsemusDW Database</title>
+        <title>SEMUS_Procedimento - bdSemuwsDW20210616 Database</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
@@ -46,7 +46,7 @@
                 <nav class="navbar navbar-static-top">
                     <div class="container">
                         <div class="navbar-header">
-                            <a href="../index.html" class="navbar-brand"><b>bdsemusDW</b> Database</a>
+                            <a href="../index.html" class="navbar-brand"><b>bdSemuwsDW20210616</b> Database</a>
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
                         </div>
 
@@ -73,14 +73,14 @@
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                    <h1>sp_upgraddiagrams</h1><br />
+                    <h1>SEMUS_Procedimento</h1><p><span id="recordNumber">1000</span> rows</p><br />
                 </section>
                 <!-- Main content -->
                 <section class="content">
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
-                            <h3 id="Columns" class="box-title">Parameters</h3>
+                            <h3 id="Columns" class="box-title">Columns</h3>
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
@@ -90,30 +90,152 @@
                             <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
                                 <thead align='left'>
                                 <tr>
-                                    <th>Name</th>
+                                    <th>Column</th>
                                     <th>Type</th>
-                                    <th>Mode</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
                                 </tr>
                                 </thead>
                                 <tbody>
+                                <tr>
+                                    <td><span id="CodPaciente">CodPaciente</span></td>
+                                    <td>int</td>
+                                    <td>4</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="IdadePacienteEmAnos">IdadePacienteEmAnos</span></td>
+                                    <td>int</td>
+                                    <td>4</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="CodProntuarioProcedimento">CodProntuarioProcedimento</span></td>
+                                    <td>bigint</td>
+                                    <td>8</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Data">Data</span></td>
+                                    <td>datetime</td>
+                                    <td>16,3</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="CBO">CBO</span></td>
+                                    <td>varchar</td>
+                                    <td>6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="DescricaoCBO">DescricaoCBO</span></td>
+                                    <td>varchar</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="CID">CID</span></td>
+                                    <td>varchar</td>
+                                    <td>20</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                    <div class="box box-primary">
-                        <div class="box-header with-border">
-                            <i class="fa fa-file-code-o"></i>
-                            <h3 id="RoutineDefinition" class="box-title">Definition</h3>
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-                        <div class="box-body">
-                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">&#13;&#10;&#9;CREATE PROCEDURE dbo.sp_upgraddiagrams&#13;&#10;&#9;AS&#13;&#10;&#9;BEGIN&#13;&#10;&#9;&#9;IF OBJECT_ID(N&#39;dbo.sysdiagrams&#39;) IS NOT NULL&#13;&#10;&#9;&#9;&#9;return 0;&#13;&#10;&#9;&#13;&#10;&#9;&#9;CREATE TABLE dbo.sysdiagrams&#13;&#10;&#9;&#9;(&#13;&#10;&#9;&#9;&#9;name sysname NOT NULL,&#13;&#10;&#9;&#9;&#9;principal_id int NOT NULL,&#9;-- we may change it to varbinary(85)&#13;&#10;&#9;&#9;&#9;diagram_id int PRIMARY KEY IDENTITY,&#13;&#10;&#9;&#9;&#9;version int,&#13;&#10;&#9;&#13;&#10;&#9;&#9;&#9;definition varbinary(max)&#13;&#10;&#9;&#9;&#9;CONSTRAINT UK_principal_name UNIQUE&#13;&#10;&#9;&#9;&#9;(&#13;&#10;&#9;&#9;&#9;&#9;principal_id,&#13;&#10;&#9;&#9;&#9;&#9;name&#13;&#10;&#9;&#9;&#9;)&#13;&#10;&#9;&#9;);&#13;&#10;&#13;&#10;&#13;&#10;&#9;&#9;/* Add this if we need to have some form of extended properties for diagrams */&#13;&#10;&#9;&#9;/*&#13;&#10;&#9;&#9;IF OBJECT_ID(N&#39;dbo.sysdiagram_properties&#39;) IS NULL&#13;&#10;&#9;&#9;BEGIN&#13;&#10;&#9;&#9;&#9;CREATE TABLE dbo.sysdiagram_properties&#13;&#10;&#9;&#9;&#9;(&#13;&#10;&#9;&#9;&#9;&#9;diagram_id int,&#13;&#10;&#9;&#9;&#9;&#9;name sysname,&#13;&#10;&#9;&#9;&#9;&#9;value varbinary(max) NOT NULL&#13;&#10;&#9;&#9;&#9;)&#13;&#10;&#9;&#9;END&#13;&#10;&#9;&#9;*/&#13;&#10;&#13;&#10;&#9;&#9;IF OBJECT_ID(N&#39;dbo.dtproperties&#39;) IS NOT NULL&#13;&#10;&#9;&#9;begin&#13;&#10;&#9;&#9;&#9;insert into dbo.sysdiagrams&#13;&#10;&#9;&#9;&#9;(&#13;&#10;&#9;&#9;&#9;&#9;[name],&#13;&#10;&#9;&#9;&#9;&#9;[principal_id],&#13;&#10;&#9;&#9;&#9;&#9;[version],&#13;&#10;&#9;&#9;&#9;&#9;[definition]&#13;&#10;&#9;&#9;&#9;)&#13;&#10;&#9;&#9;&#9;select&#9; &#13;&#10;&#9;&#9;&#9;&#9;convert(sysname, dgnm.[uvalue]),&#13;&#10;&#9;&#9;&#9;&#9;DATABASE_PRINCIPAL_ID(N&#39;dbo&#39;),&#9;&#9;&#9;-- will change to the sid of sa&#13;&#10;&#9;&#9;&#9;&#9;0,&#9;&#9;&#9;&#9;&#9;&#9;&#9;-- zero for old format, dgdef.[version],&#13;&#10;&#9;&#9;&#9;&#9;dgdef.[lvalue]&#13;&#10;&#9;&#9;&#9;from dbo.[dtproperties] dgnm&#13;&#10;&#9;&#9;&#9;&#9;inner join dbo.[dtproperties] dggd on dggd.[property] = &#39;DtgSchemaGUID&#39; and dggd.[objectid] = dgnm.[objectid]&#9;&#13;&#10;&#9;&#9;&#9;&#9;inner join dbo.[dtproperties] dgdef on dgdef.[property] = &#39;DtgSchemaDATA&#39; and dgdef.[objectid] = dgnm.[objectid]&#13;&#10;&#9;&#9;&#9;&#9;&#13;&#10;&#9;&#9;&#9;where dgnm.[property] = &#39;DtgSchemaNAME&#39; and dggd.[uvalue] like N&#39;_EA3E6268-D998-11CE-9454-00AA00A3F36E_&#39; &#13;&#10;&#9;&#9;&#9;return 2;&#13;&#10;&#9;&#9;end&#13;&#10;&#9;&#9;return 1;&#13;&#10;&#9;END&#13;&#10;&#9;</textarea>
-                        </div>
+                    <div class="alert alert-warning alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                        <h4><i class="icon fa fa-warning"></i>Diagram producer might be missing</h4>
+                        <p>No diagrams were produced please see application output for any errors</p>
                     </div>
                 </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
             </div>
             <!-- /.content-wrapper -->
             <footer class="main-footer">
@@ -160,7 +282,7 @@
         <script src="../bower/codemirror/sql.js"></script>
         <!-- AdminLTE App -->
         <script src="../bower/admin-lte/dist/js/app.min.js"></script>
-        <script src="routine.js"></script>
+        <script src="table.js"></script>
         <script src="../schemaSpy.js"></script>
     </body>
 </html>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database name="bdSemuwsDW20210616" schema="dbo" type="Microsoft SQL Server - 14.00.3356">
+   <tables>
+      <table catalog="bdSemuwsDW20210616" name="SEMUS_Exame" numRows="1000" remarks="" schema="dbo" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="CodPaciente" nullable="false" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="IdadePacienteEmAnos" nullable="true" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="2" name="DataCriacao" nullable="false" remarks="" size="16" type="datetime" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CodigoExameSolicitado" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="NomeExameSolicitado" nullable="true" remarks="" size="250" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Diagnostico" nullable="true" remarks="" size="50" type="varchar" typeCode="12"/>
+      </table>
+      <table catalog="bdSemuwsDW20210616" name="SEMUS_Mamografia" numRows="1000" remarks="" schema="dbo" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="CodPaciente" nullable="false" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="IdadePacienteEmAnos" nullable="true" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CodRequisicaoDocumento" nullable="true" remarks="" size="8" type="bigint" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="3" name="DataSolicitacao" nullable="false" remarks="" size="16" type="datetime" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ExameSolicitado" nullable="false" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Avaliado" nullable="false" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="DataAvaliacao" nullable="true" remarks="" size="6" type="date" typeCode="91"/>
+      </table>
+      <table catalog="bdSemuwsDW20210616" name="SEMUS_Paciente" numRows="1000" remarks="" schema="dbo" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="CodPaciente" nullable="false" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="Sexo" nullable="false" remarks="" size="1" type="char" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="DataNascimento" nullable="true" remarks="" size="6" type="date" typeCode="91"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CNESOrigem" nullable="true" remarks="" size="20" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="4" name="DataCadastro" nullable="false" remarks="" size="16" type="datetime" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="TipoLogradouro" nullable="true" remarks="" size="100" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Logradouro" nullable="true" remarks="" size="150" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="UF" nullable="true" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="Municipio" nullable="true" remarks="" size="50" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="Cep" nullable="true" remarks="" size="9" type="varchar" typeCode="12"/>
+      </table>
+      <table catalog="bdSemuwsDW20210616" name="SEMUS_Populacao" numRows="67975" remarks="" schema="dbo" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="3" id="0" name="DataCorte" nullable="true" remarks="" size="16" type="datetime" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="CNES" nullable="true" remarks="" size="15" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Sexo" nullable="true" remarks="" size="1" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="IdadeEmMeses" nullable="true" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="IdadeEmAnos" nullable="true" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Familia" nullable="true" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Qtd" nullable="true" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="Paciente" nullable="true" remarks="" size="4" type="int" typeCode="4"/>
+      </table>
+      <table catalog="bdSemuwsDW20210616" name="SEMUS_PreNatalAcompanhamento" numRows="1000" remarks="" schema="dbo" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="CodPaciente" nullable="false" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="IdadePacienteEmAnos" nullable="true" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CodFichaClinica" nullable="false" remarks="" size="8" type="bigint" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CodAcompanhamentoPreNatalConsulta" nullable="false" remarks="" size="8" type="bigint" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="CBO" nullable="false" remarks="" size="6" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="DescricaoCBO" nullable="true" remarks="" size="250" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="CNES" nullable="false" remarks="" size="15" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="7" name="DataAcompanhamento" nullable="false" remarks="" size="16" type="datetime" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="IdadeGestacional" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="GravidezDeRisco" nullable="false" remarks="" size="4" type="int" typeCode="4"/>
+      </table>
+      <table catalog="bdSemuwsDW20210616" name="SEMUS_PreNatalCadastro" numRows="1000" remarks="" schema="dbo" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="CodPaciente" nullable="false" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="IdadePacienteEmAnos" nullable="true" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CodFichaClinica" nullable="false" remarks="" size="8" type="bigint" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="3" name="DataCadastro" nullable="false" remarks="" size="16" type="datetime" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="CBO" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="DescricaoCBO" nullable="true" remarks="" size="250" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="IdadeGestacional" nullable="true" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="GravidezDeRisco" nullable="false" remarks="" size="4" type="int" typeCode="4"/>
+      </table>
+      <table catalog="bdSemuwsDW20210616" name="SEMUS_PreNatalExameAvaliado" numRows="1000" remarks="" schema="dbo" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="CodPaciente" nullable="false" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="IdadePacienteEmAnos" nullable="true" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CodFichaClinica" nullable="false" remarks="" size="8" type="bigint" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CodAcompanhamentoPreNatalConsulta" nullable="false" remarks="" size="8" type="bigint" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ExamaAvaliado" nullable="false" remarks="" size="125" type="varchar" typeCode="12"/>
+      </table>
+      <table catalog="bdSemuwsDW20210616" name="SEMUS_PreNatalVacinaRegistrada" numRows="1000" remarks="" schema="dbo" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="CodPaciente" nullable="false" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="IdadePacienteEmAnos" nullable="true" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CodFichaClinica" nullable="false" remarks="" size="8" type="bigint" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CodAcompanhamentoPreNatalConsulta" nullable="true" remarks="" size="8" type="bigint" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Imunobiologico" nullable="false" remarks="" size="125" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Dose" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="6" name="DataAplicacao" nullable="false" remarks="" size="16" type="datetime" typeCode="93"/>
+      </table>
+      <table catalog="bdSemuwsDW20210616" name="SEMUS_Procedimento" numRows="1000" remarks="" schema="dbo" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="CodPaciente" nullable="false" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="IdadePacienteEmAnos" nullable="true" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CodProntuarioProcedimento" nullable="false" remarks="" size="8" type="bigint" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="3" name="Data" nullable="false" remarks="" size="16" type="datetime" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="CBO" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="DescricaoCBO" nullable="true" remarks="" size="250" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="CID" nullable="true" remarks="" size="20" type="varchar" typeCode="12"/>
+      </table>
+      <table catalog="bdSemuwsDW20210616" name="SEMUS_TesteRapido" numRows="1000" remarks="" schema="dbo" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="CodPaciente" nullable="false" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="IdadePacienteEmAnos" nullable="true" remarks="" size="4" type="int" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="2" name="DataCriacao" nullable="false" remarks="" size="16" type="datetime" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ExameRelizado" nullable="true" remarks="" size="50" type="varchar" typeCode="12"/>
+      </table>
+      <table catalog="bdSemuwsDW20210616" name="SEMUS_Unidade" numRows="54" remarks="" schema="dbo" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="CNES" nullable="false" remarks="" size="15" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="Descricao" nullable="false" remarks="" size="150" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Endereco" nullable="false" remarks="" size="300" type="varchar" typeCode="12"/>
+      </table>
+   </tables>
+</database>

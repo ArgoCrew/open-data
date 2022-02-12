@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>RBE_Populacao - bdsemusDW Database</title>
+        <title>SEMUS_PreNatalVacinaRegistrada - bdSemuwsDW20210616 Database</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
@@ -46,7 +46,7 @@
                 <nav class="navbar navbar-static-top">
                     <div class="container">
                         <div class="navbar-header">
-                            <a href="../index.html" class="navbar-brand"><b>bdsemusDW</b> Database</a>
+                            <a href="../index.html" class="navbar-brand"><b>bdSemuwsDW20210616</b> Database</a>
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
                         </div>
 
@@ -73,7 +73,7 @@
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                    <h1>RBE_Populacao</h1><p><span id="recordNumber">6942936</span> rows</p><br />
+                    <h1>SEMUS_PreNatalVacinaRegistrada</h1><p><span id="recordNumber">1000</span> rows</p><br />
                 </section>
                 <!-- Main content -->
                 <section class="content">
@@ -103,7 +103,7 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td><span id="IdTempo">IdTempo</span></td>
+                                    <td><span id="CodPaciente">CodPaciente</span></td>
                                     <td>int</td>
                                     <td>4</td>
                                     <td title=''></td>
@@ -120,7 +120,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td><span id="CNES">CNES</span></td>
+                                    <td><span id="IdadePacienteEmAnos">IdadePacienteEmAnos</span></td>
                                     <td>int</td>
                                     <td>4</td>
                                     <td title='nullable'>√</td>
@@ -137,9 +137,26 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td><span id="Sexo">Sexo</span></td>
-                                    <td>char</td>
-                                    <td>1</td>
+                                    <td><span id="CodFichaClinica">CodFichaClinica</span></td>
+                                    <td>bigint</td>
+                                    <td>8</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="CodAcompanhamentoPreNatalConsulta">CodAcompanhamentoPreNatalConsulta</span></td>
+                                    <td>bigint</td>
+                                    <td>8</td>
                                     <td title='nullable'>√</td>
                                     <td title=''></td>
                                     <td>null</td>
@@ -154,9 +171,26 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td><span id="IdadeEmMeses">IdadeEmMeses</span></td>
-                                    <td>int</td>
-                                    <td>4</td>
+                                    <td><span id="Imunobiologico">Imunobiologico</span></td>
+                                    <td>varchar</td>
+                                    <td>125</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="Dose">Dose</span></td>
+                                    <td>varchar</td>
+                                    <td>2147483647</td>
                                     <td title='nullable'>√</td>
                                     <td title=''></td>
                                     <td>null</td>
@@ -171,61 +205,10 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td><span id="IdadeEmAnos">IdadeEmAnos</span></td>
-                                    <td>int</td>
-                                    <td>4</td>
-                                    <td title='nullable'>√</td>
+                                    <td><span id="DataAplicacao">DataAplicacao</span></td>
+                                    <td>datetime</td>
+                                    <td>16,3</td>
                                     <td title=''></td>
-                                    <td>null</td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td><span id="Familia">Familia</span></td>
-                                    <td>int</td>
-                                    <td>4</td>
-                                    <td title='nullable'>√</td>
-                                    <td title=''></td>
-                                    <td>null</td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td><span id="Qtd">Qtd</span></td>
-                                    <td>int</td>
-                                    <td>4</td>
-                                    <td title='nullable'>√</td>
-                                    <td title=''></td>
-                                    <td>null</td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td><span id="Paciente">Paciente</span></td>
-                                    <td>int</td>
-                                    <td>4</td>
-                                    <td title='nullable'>√</td>
                                     <td title=''></td>
                                     <td>null</td>
                                     <td>

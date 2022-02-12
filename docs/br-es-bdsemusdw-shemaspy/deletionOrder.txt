@@ -1,5 +1,11 @@
-sysdiagrams
-RBE_TEMPO
-RBE_Populacao
-RBE_IndicadorPrenatal
-RBE_IndicadorExameCitoPatologico
+SEMUS_Unidade
+SEMUS_TesteRapido
+SEMUS_Procedimento
+SEMUS_PreNatalVacinaRegistrada
+SEMUS_PreNatalExameAvaliado
+SEMUS_PreNatalCadastro
+SEMUS_PreNatalAcompanhamento
+SEMUS_Populacao
+SEMUS_Paciente
+SEMUS_Mamografia
+SEMUS_Exame
