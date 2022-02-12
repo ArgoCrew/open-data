@@ -1,0 +1,5 @@
+sysdiagrams
+RBE_TEMPO
+RBE_Populacao
+RBE_IndicadorPrenatal
+RBE_IndicadorExameCitoPatologico
